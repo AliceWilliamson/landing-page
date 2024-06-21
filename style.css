@@ -2,14 +2,19 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    justify-content: space-between;
+    font-family: Verdana, Tahoma, sans-serif;
+    justify-content: center;
+}
+
+.section-one{
+    background-color: #1F2937;
 }
 
 .header{
     display: flex;
     background-color: #1F2937;
     color: #F9FAF8;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header-right{
@@ -19,23 +24,33 @@ body{
 
 .header-left{
     font-size: 24px;
+    margin-left: 16px;
+    margin-top: 16px;
 }
 
 a{
     text-decoration: none;
+    color: #e5e7eb;
+}
+
+.git-link{
+    text-decoration: underline;
 }
 
 a:visited { text-decoration: none; color: #e5e7eb; }
 
+
 li{
     list-style-type: none;
     display: inline;
+    margin-right: 20px;
 }
 
 .website-info{
     background-color: #1F2937;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 
 .info-text-header{
@@ -55,6 +70,7 @@ li{
 
 button{
     background-color: #3882f6;
+    border-radius: 8px;
 }
 
 .call-to-action{
@@ -94,11 +110,13 @@ button{
 
 .box-container{
     display: flex;
+    gap: 64px;
 }
 
 .boxes{
     display: flex;
     flex-direction: column;
+    max-width: 150px;
 }
 
 .signature{
@@ -108,4 +126,11 @@ button{
 .footer{
     display: flex;
     justify-content: center;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    gap: 6px;
+}
+
+.small-img{
+    border-radius: 8px;
 }
